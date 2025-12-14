@@ -11,6 +11,7 @@ import { useAuth } from "@/components/auth-provider"
 import { UserMenu } from "@/components/user-menu"
 import { GlobalSearch } from "@/components/global-search"
 import { NotificationCenter } from "@/components/notification-center"
+import Image from "next/image"
 
 const languages = [
   { code: "uz", name: "O'zbek" },
@@ -194,8 +195,9 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80 transition-shadow hover:shadow-md">
       <nav className="container mx-auto flex items-center justify-between p-4">
         <Link href="/" className="flex items-center gap-2">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#1a2332] text-white">
-            <span className="text-xl font-bold">PSR</span>
+          <div className="flex h-10 w-10 items-center justify-center rounded-lg text-white">
+            {/* <span className="text-xl font-bold">PSR</span> */}
+            <Image src="/ЛОГО.png" alt='' width="50" height="50" />
           </div>
           <div className="hidden flex-col md:flex">
             <span className="text-sm font-semibold text-foreground">Progressive Science</span>
